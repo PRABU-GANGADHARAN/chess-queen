@@ -142,7 +142,8 @@ function play(){
 	input.forEach( num => {
 		let number = Number(num.slice(num.length-1));
 		let dir = num.slice(0,num.length-1);
+		move(number,dir)
 	});
 	console.log("Queen's current position -> "+board[queen.position.x][queen.position.y]);
-
+	document.write("Queen's current position -> "+board[queen.position.x][queen.position.y]);
 }
